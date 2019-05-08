@@ -1,0 +1,167 @@
+<!DOCTYPE html >
+<html lang="ru">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/all.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="shortcut icon" href="fav.ico" type="image/x-icon" />
+  <title>Dz6KuznetsovKonstantin.kh</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <div class="layout">
+        <div class="logo">
+
+        </div>
+        <nav>
+          <ul>
+            <li>
+
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="content" class="layout">
+        <div class=tasks id="fixed">
+          <button onclick="task4()"> Click me! I'm #4</button>
+          <button onclick="task5()"> Click me! I'm #5</button>
+          <button onclick="task6()"> Click me! I'm #6</button>
+          <button onclick="task7()"> Click me! I'm #7</button>
+          <button onclick="task8()"> Click me! I'm #8</button>
+        </div>
+        <ul id="menu-tabs" class="tabs">
+          <li class="t1">
+            <a href="#">
+              <span>З</span>
+              <span>а</span>
+              <span>д</span>
+              <span>а</span>
+              <span>ч</span>
+              <span>а </span>
+              <span>№</span>
+              <span>1</span>
+            </a>
+          </li>
+          <li class="t2">
+            <a href="#">
+              <span>З</span>
+              <span>а</span>
+              <span>д</span>
+              <span>а</span>
+              <span>ч</span>
+              <span>а </span>
+              <span>№</span>
+              <span>2</span>
+            </a>
+          </li>
+          <li class="t3">
+            <a href="#">
+              <span>З</span>
+              <span>а</span>
+              <span>д</span>
+              <span>а</span>
+              <span>ч</span>
+              <span>а </span>
+              <span>№</span>
+              <span>3</span>
+            </a>
+          </li>
+          <li class="t4">
+            <a href="#">
+              <span>З</span>
+              <span>а</span>
+              <span>д</span>
+              <span>а</span>
+              <span>ч</span>
+              <span>а </span>
+              <span>№</span>
+              <span>9</span>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="t1" id="idTask1">
+            <div id="app">
+              <input type="number" class="first" />
+              <span class="action"> </span>
+              <input type="number" class="second" />
+              <button class="calc">=</button>
+              <input type="text" class="result" /> <br />
+              <div class="actions">
+                <button data-action="+">+</button>
+                <button data-action="-">-</button>
+                <button data-action="*">*</button>
+                <button data-action="/">/</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="t2" id="idTask2">
+            <form>
+              <input type="text" id="up">
+              <input type="button" onclick="check();" value="UPPERCASE"> <br />
+
+              <input type="text" id="upNow" onkeyup="upperNow();">
+
+              <input name="yourInput" onkeydown="upperNowSetTimeout(this)" />
+
+              <input type="text" onchange="javascript:this.value=this.value.toUpperCase();">
+
+              <input type="text" id="focus">
+
+              <input class="too" type="button" onclick="upper ()" value="upper"></input>
+            </form>
+          </div>
+          <div class="t3" id="idTask3">
+
+            <form>
+              <input type="text" id="num1" placeholder="number #1">
+              <input type="text" id="num2" placeholder="number #2">
+              <p>
+                <input type="radio" id="op1" class="radio" value="+" name="operator">
+                <label for="op1">+</label><br />
+              </p>
+              <p>
+                <input type="radio" id="op2" class="radio" value="-" name="operator">
+                <label for="op2">-</label>
+              </p>
+              <p>
+                <input type="radio" id="op3" class="radio" value="*" name="operator">
+                <label for="op3">*</label><br />
+              </p>
+              <p>
+                <input type="radio" id="op4" class="radio" value="/" name="operator">
+                <label for="op4">/</label><br />
+              </p>
+
+              <p id="res">answer:</p>
+              <input type="button" value="=" onclick="calculatorRadio()">
+            </form>
+
+          </div>
+
+          <div class="t4" id="idTask9">
+               <a href="https://konstantinkuznetsovkh.github.io/dz6Pages/dz6HTML/" target="_blank" class="infinite"></a>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/jquery-3.2.0.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
